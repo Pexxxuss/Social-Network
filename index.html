@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hexa</title>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="img/logo.png" />
+    </div>
+    <h1>Pexxxuss Social Network</h1>
+    <div class="main-wrapper">
+      <form id="login-form">
+        <h2>Login</h2>
+        <div>
+          <label>Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="login_email"
+            placeholder="name.name@mail.com"
+          />
+        </div>
+        <div>
+          <label>Password</label>
+          <input
+            type="password"
+            name="password"
+            id="login_lozinka"
+            placeholder="******"
+          />
+        </div>
+        <div>
+          <button>Log in</button>
+        </div>
+      </form>
+    </div>
+    <div class="no-acc-register">
+      <p>Not registered?</p>
+      <button id="registracija">Register now!</button>
+    </div>
+    <div class="custom-modal">
+      <button id="closeModal">x</button>
+      <form id="registrationForm">
+        <h2>Register User</h2>
+        <div>
+          <label for="korisnicko_ime">User Name: *</label>
+          <input
+            id="korisnicko_ime"
+            type="text"
+            name="korisnicko_ime"
+            placeholder="name.name"
+          />
+        </div>
+        <div>
+          <label for="email">Email adress: *</label>
+          <input
+            id="email"
+            type="text"
+            name="register_email"
+            placeholder="name.name@mail.com"
+          />
+        </div>
+        <div>
+          <label for="lozinka">Password: *</label>
+          <input
+            id="lozinka"
+            type="password"
+            name="register_lozinka"
+            placeholder="********"
+          />
+        </div>
+        <div>
+          <label for="ponovi_lozinku">Repeat password: *</label>
+          <input
+            id="ponovi_lozinku"
+            type="password"
+            name="ponovi_lozinku"
+            placeholder="********"
+          />
+        </div>
+        <div>
+          <button>Register now</button>
+        </div>
+      </form>
+    </div>
+    <script src="js/Validator.js"></script>
+    <script src="js/Session.js"></script>
+    <script src="js/User.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
